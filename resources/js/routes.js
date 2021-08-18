@@ -1,17 +1,30 @@
-import VueRouter from 'vue-router';
 
-var Home = require('./components/Home');
+import {createRouter, createWebHashHistory} from 'vue-router';
+
+
+
+var Contacto = require('./components/Contacto');
+var AcercaDeMi = require('./components/AcercaDeMi');
 
 let routes = [
     {
-        path: '/home',
-        name: 'home',
-        component: Home,
-    }];
+        path: '/contacto',
+        name: 'contacto',
+        component: Contacto,
+    },
+    {
+        path: '/acerca_de_mi',
+        name: 'acerca_de_mi',
+        component: AcercaDeMi,
+    }
+];
 
 
-export default new VueRouter({
-    mode: 'hash',
-    routes,
-    linkActiveClass: 'is-active'
-});
+
+const router = createRouter({
+    // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
+    history: createWebHashHistory(),
+    routes // short for `routes: routes`
+  })
+  
+export default router

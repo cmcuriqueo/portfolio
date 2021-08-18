@@ -27,16 +27,16 @@
         </ul>
 
         <div class="d-flex">
-          <button class="button is-success is-outline" type="button">
+          <button @click="acerca_de_mi"  class="button is-success is-outline" type="button">
             Acerca de Mi
           </button>
         </div>
         &nbsp;
 
         <div class="d-flex">
-          <router-link class="button is-success is-outline" to="/home">
+          <button @click="contacto" class="button is-success is-outline">
             Contacto
-          </router-link>
+          </button>
         </div>
       </div>
     </div>
@@ -45,5 +45,13 @@
 <script>
 export default {
   name: "NavBar",
+  methods: {
+    contacto: function () {
+        this.$router.push('/contacto')
+    },
+    acerca_de_mi: function () {
+        this.$router.push('/acerca_de_mi')
+    }
+  }
 };
 </script>
