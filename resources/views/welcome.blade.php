@@ -20,9 +20,8 @@
 </head>
 
 <body>
-    <div class="container-fluid" id="app">
-     
-      </div>
+    <div id="app">
+    </div>
 </body>
 <script src="{{ mix('js/app.js') }}"></script>
 

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 incololate code">
-        &lt;body&gt;Hello contact!&lt;/body&gt;
+        &lt;body&gt;Hello World!&lt;/body&gt;
       </div>
     </div>
   </div>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "Contacto"
+  name: "Home"
 };
 </script>
 

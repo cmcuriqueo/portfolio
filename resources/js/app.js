@@ -1,12 +1,14 @@
 require('./bootstrap');
-import { createApp } from 'vue'
+import { createApp, h} from 'vue'
 import routes from './routes.js';
 
 import App  from  './components/App'
 
 
 
-const app = createApp(App)
+const app = createApp({
+    render: ()=>h(App)
+})
 
 
 app.use(routes)

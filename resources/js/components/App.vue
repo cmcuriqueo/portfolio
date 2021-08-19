@@ -1,18 +1,12 @@
 <template>
   <NavBar></NavBar>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 incololate code">
-        &lt;body&gt;Hello World!&lt;/body&gt;
-      </div>
-    </div>
-  </div>
+        <router-view></router-view>
 </template>
 
 <script>
 import NavBar from "./NavBar";
 export default {
-  name: "App",
+  name: "app",
   components: {
     NavBar,
   },

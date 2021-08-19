@@ -3,10 +3,16 @@ import {createRouter, createWebHashHistory} from 'vue-router';
 
 
 
-var Contacto = require('./components/Contacto');
-var AcercaDeMi = require('./components/AcercaDeMi');
+var Contacto = () => import('./components/Contacto');
+var Home = () => import('./components/Home');
+var AcercaDeMi = () => import('./components/AcercaDeMi');
 
 let routes = [
+    {
+        path: '/',
+        name: 'home',
+        component: Home,
+    },
     {
         path: '/contacto',
         name: 'contacto',
